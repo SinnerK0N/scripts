@@ -2,6 +2,15 @@
 # Credits for timer: https://unix.stackexchange.com/a/449899
 start_time=$(date +%s)
 #
+# Remove useless packages
+#
+sudo apt remove chromium-browser -y
+sudo apt remove lxde -y
+sudo apt remove python3 -y
+sudo apt remove vim-common -y
+sudo apt remove vim-tiny -y
+sudo apt remove vlc -y
+#
 # Update package list & Update installed packages
 #
 sudo apt update
@@ -29,10 +38,6 @@ sudo rm /etc/vsftpd.conf
 sudo curl -LO https://raw.githubusercontent.com/SinnerK0N/scripts/master/pi_setup/data/vsftpd.conf
 sudo mv vsftpd.conf /etc/
 systemctl restart vsftpd
-#
-# Git
-#
-sudo apt install git
 #
 # Install Node.js & NPM
 #
