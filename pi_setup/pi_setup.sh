@@ -16,9 +16,10 @@ sudo apt remove vlc -y
 sudo apt update
 sudo apt full-upgrade -y
 #
-# Install neofetch & make an alias to print CPU temperature
+# Install (neofetch & screen) & make an alias to print CPU temperature
 #
 sudo apt install neofetch
+sudo apt install screen
 sudo echo "alias temp='/usr/bin/vcgencmd measure_temp'" >> /home/pi/.bash_aliases
 #
 # Install Webserver & PHP
