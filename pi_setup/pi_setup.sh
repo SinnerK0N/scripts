@@ -53,7 +53,6 @@ sudo apt install default-mysql-server default-mysql-server -y
 #
 sudo apt install phpmyadmin -y
 sudo echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
-sudo echo "$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;" >> /etc/phpmyadmin/config.inc.php
 sudo service apache2 restart
 #
 # Finished
