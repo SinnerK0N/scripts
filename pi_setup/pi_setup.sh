@@ -45,6 +45,10 @@ systemctl restart vsftpd
 sudo curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 sudo apt install -y nodejs
 #
+# Install MySQL
+#
+sudo apt install default-mysql-server default-mysql-server -y
+#
 # Install PHPMyAdmin and set it up
 #
 sudo apt install phpmyadmin -y
