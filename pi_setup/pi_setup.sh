@@ -18,8 +18,7 @@ sudo apt full-upgrade -y
 #
 # Install (neofetch & screen) & make an alias to print CPU temperature
 #
-sudo apt install neofetch
-sudo apt install screen
+sudo apt install neofetch screen -y
 sudo echo "alias temp='/usr/bin/vcgencmd measure_temp'" >> /home/pi/.bash_aliases
 #
 # Install Webserver & PHP
